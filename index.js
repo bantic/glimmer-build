@@ -47,8 +47,11 @@ module.exports = function(options) {
       annotation: 'test-support'
     }));
 
+    /*
+     * Skip using custom babel-helpers
     let babelHelpers = writeFile('babel-helpers.js', helpers('amd'));
     trees.push(babelHelpers);
+    */
 
     let vendorTrees = options.vendorTrees || [];
 
